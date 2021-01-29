@@ -5,6 +5,10 @@ import java.util.List;
 public class MusicPlayer {
 
 
+    public MusicPlayer(Music music) {
+        this.music = music;
+    }
+
     public Music getMusic() {
         return music;
     }
@@ -34,12 +38,7 @@ public class MusicPlayer {
     }
 
 
-    public MusicPlayer() {
-
-    }
-
     public void playMusic() {
-
-        System.out.println("Playing : "+getMusic());;
+        System.out.println("Playing : " + getMusic());
     }
 }
