@@ -23,6 +23,11 @@ public class TestSpring {
         System.out.println(musicPlayer.getName());
         System.out.println(musicPlayer.getVolume());
 
+        ClassicalMusic classicalMusic = context.getBean("classicalMusic",ClassicalMusic.class);
+//        ClassicalMusic classicalMusic1 = context.getBean("classicalMusic",ClassicalMusic.class);
+
+//        System.out.println(classicalMusic==classicalMusic1);
+
         context.close();
     }
 }
